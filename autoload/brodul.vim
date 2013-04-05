@@ -2,8 +2,10 @@
 " Author: Rok Garbas <rok@garbas.si>
 " Source: http://github.com/garbas/vim-config-garbas
 "
+" Modified:Andraz Brodnik <brodul@brodul.org>
+"
 
-fun! garbas#config()
+fun! brodul#config()
 
 " Addons {{{
 " My Addons Custom Config {{{
