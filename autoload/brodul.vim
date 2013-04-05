@@ -61,6 +61,7 @@ let g:PIPA_ADDONS = {
       \ 'snipmate': { 'categories': [ 'default' ] },
       \ 'snipmate-snippets': { 'categories': [ 'default' ] },
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
+      \ 'github:scrooloose/nerdcommenter': { 'categories': [ 'default' ] },
       \ 'Gist': { 'categories': [ 'development' ], 'config': function('Addons_Gist') },
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
   \ }
