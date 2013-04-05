@@ -1,9 +1,9 @@
 {
-  "name" : "vim-config-garbas",
-  "version" : "0.1",
-  "author" : "Rok Garbas",
-  "maintainer" : "Rok Garbas <rok@garbas.si>",
-  "repository" : {"type": "git", "url": "git://github.com/garbas/vim-config-garbas.git"},
+  "name" : "vim-config-brodul",
+  "version" : "0.1.1",
+  "author" : "Andraz Brodnik",
+  "maintainer" : "Andraz Brodnik <brodul@brodul.org>",
+  "repository" : {"type": "git", "url": "git://github.com/brodul/vim-config-brodul.git"},
   "dependencies" : {
     "pipa" : {"type": "git", "url": "git://github.com/kiberpipa/pipa-vim.git"},
   },

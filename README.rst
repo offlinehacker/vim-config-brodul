@@ -21,18 +21,18 @@ bootstrap VAM
 
     set runtimepath+=~/.vim/addons/vim-addon-manager
     call vam#ActivateAddons(
-        \ ['github:garbas/vim-config-garbas'],
+        \ ['github:brodul/vim-config-brodul'],
         \ {'plugin_root_dir': $HOME.'/.vim/addons'})
 
     let mapleader=","
     let maplocalleader = "\\"
 
-    call garbas#config()
+    call brodul#config()
 
 
     let g:tagbar_ctags_bin = '/var/run/current-system/sw/bin/ctags'
 
-    let g:github_user = 'garbas'
+    let g:github_user = 'brodul'
     let g:github_token = 'XXXXXX'
 
     "set guifont=Terminus\ 9
