@@ -33,14 +33,6 @@ function! Addons_ctrlp()
 endfunction
 
 " }}}
-" Gist {{{
-
-function! Addons_Gist ()
-  let g:gist_detect_filetype = 1  " detect filetype from filename
-  let g:gist_open_browser_after_post = 1  " open browser after the post
-endfunction
-
-" }}}
 " Solarized {{{
 
 function! Addons_Solarized ()
@@ -72,7 +64,6 @@ let g:PIPA_ADDONS = {
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'github:scrooloose/nerdcommenter': { 'categories': [ 'default' ] },
       \ 'DetectIndent': { 'categories': [ 'default' ], 'config': function('Addons_DetectIndent')},
-      \ 'Gist': { 'categories': [ 'development' ], 'config': function('Addons_Gist') },
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
   \ }
 
