@@ -51,8 +51,17 @@ function! Addons_Solarized ()
 endfunction
 
 " }}}
+" DetectIndent {{{
+
+function! Addons_DetectIndent ()
+  autocmd BufReadPost * :DetectIndent
+endfunction
+
+" }}}
+"
 " }}}
 " My Addons {{{
+
 
 let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
@@ -62,9 +71,11 @@ let g:PIPA_ADDONS = {
       \ 'snipmate-snippets': { 'categories': [ 'default' ] },
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'github:scrooloose/nerdcommenter': { 'categories': [ 'default' ] },
+      \ 'DetectIndent': { 'categories': [ 'default' ], 'config': function('Addons_DetectIndent')},
       \ 'Gist': { 'categories': [ 'development' ], 'config': function('Addons_Gist') },
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
   \ }
+
 
 
 " TODO: {{{
