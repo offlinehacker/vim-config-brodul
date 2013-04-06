@@ -50,6 +50,13 @@ function! Addons_DetectIndent ()
 endfunction
 
 " }}}
+" delimitMate {{{
+
+function! Addons_delimitMate ()
+" Add filetypes you want to ignore
+endfunction
+
+" }}}
 "
 " }}}
 " My Addons {{{
@@ -64,6 +71,7 @@ let g:PIPA_ADDONS = {
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'github:scrooloose/nerdcommenter': { 'categories': [ 'default' ] },
       \ 'DetectIndent': { 'categories': [ 'default' ], 'config': function('Addons_DetectIndent')},
+      \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
   \ }
 
