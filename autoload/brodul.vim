@@ -43,13 +43,6 @@ function! Addons_Solarized ()
 endfunction
 
 " }}}
-" DetectIndent {{{
-
-function! Addons_DetectIndent ()
-  autocmd BufReadPost * :DetectIndent
-endfunction
-
-" }}}
 " delimitMate {{{
 
 function! Addons_delimitMate ()
@@ -69,8 +62,6 @@ let g:PIPA_ADDONS = {
       \ 'snipmate': { 'categories': [ 'default' ] },
       \ 'snipmate-snippets': { 'categories': [ 'default' ] },
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
-      \ 'github:scrooloose/nerdcommenter': { 'categories': [ 'default' ] },
-      \ 'DetectIndent': { 'categories': [ 'default' ], 'config': function('Addons_DetectIndent')},
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
   \ }
