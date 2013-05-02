@@ -64,6 +64,7 @@ let g:PIPA_ADDONS = {
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
+      \ 'twilight': { 'categories': [ 'default' ] },
   \ }
 
 
@@ -248,7 +249,8 @@ filetype plugin on
 filetype plugin indent on
 "colorscheme molokai
 "colorscheme wombat
-colorscheme solarized
+"colorscheme solarized
+colorscheme twilight
 set background=dark
 "set background=light
 
