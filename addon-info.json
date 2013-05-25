@@ -1,9 +1,9 @@
 {
-  "name" : "vim-config-brodul",
+  "name" : "vim-config-offline",
   "version" : "0.1.1",
-  "author" : "Andraz Brodnik",
-  "maintainer" : "Andraz Brodnik <brodul@brodul.org>",
-  "repository" : {"type": "git", "url": "git://github.com/brodul/vim-config-brodul.git"},
+  "author" : "Jaka Hudoklin",
+  "maintainer" : "Jaka Hudoklin <jakahudoklin@gmail.com>",
+  "repository" : {"type": "git", "url": "git://github.com/offlinehacker/vim-config-offline.git"},
   "dependencies" : {
     "pipa" : {"type": "git", "url": "git://github.com/kiberpipa/pipa-vim.git"},
   },
