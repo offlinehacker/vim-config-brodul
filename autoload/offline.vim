@@ -167,7 +167,6 @@ set autoindent
 set showmode
 set showcmd
 set hidden
-set visualbell
 set cursorline
 set ttyfast
 set ruler
