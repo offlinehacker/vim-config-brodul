@@ -660,41 +660,7 @@ function! <SID>SynStack()
 endfunc
 
 " }}}
-" GUI {{{
-
-if has('gui_running')
-
-    set guifont=Menlo\ Regular\ for\ Powerline:h12
-    set antialias
-
-    " Remove all the UI cruft
-    set go-=T
-    set go-=l
-    set go-=L
-    set go-=r
-    set go-=R
-    highlight SpellBad term=underline gui=undercurl guisp=Orange
-
-    " Use a line-drawing char for pretty vertical splits.
-    set fillchars+=vert:│
-
-    " Different cursors for different modes.
-    highlight iCursor guifg=white guibg=steelblue
-    set guicursor=n-v-c:block-Cursor
-    set guicursor+=i:ver100-iCursor
-    set guicursor+=n-v-c:blinkon0
-    "set guicursor+=i:blinkwait10
-
-    "set guicursor=n-c:block-Cursor-blinkon0
-    "set guicursor+=v:block-vCursor-blinkon0
-    "set guicursor+=i-ci:ver100-iCursor
-    set guicursor+=a:blinkon0  " Disable all blinking:
-
-" }}}
 " Console UI {{{
-else
-
-endif
 " }}}
 
 endfun
