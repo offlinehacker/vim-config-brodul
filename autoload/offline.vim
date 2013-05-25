@@ -286,8 +286,8 @@ filetype plugin on
 filetype plugin indent on
 "colorscheme molokai
 "colorscheme wombat
-"colorscheme solarized
-colorscheme twilight
+colorscheme solarized
+"colorscheme twilight
 set background=dark
 "set background=light
 
