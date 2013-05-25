@@ -50,6 +50,35 @@ function! Addons_delimitMate ()
 endfunction
 
 " }}}
+" minibuxexplorer {{{
+
+fun! Addons_minibufexplorer ()
+  "Show the miniBufExplorer from the start"
+  let g:miniBufExplorerMoreThanOne = 0
+
+  " make tabs show complete (no broken on two lines)
+  let g:miniBufExplTabWrap = 1
+
+  " If you would like to single click on tabs rather than double clicking on
+  " them to goto the selected buffer.
+  let g:miniBufExplUseSingleClick = 1
+endfunction
+
+" }}}
+" NeoComplcache {{{
+"
+fun! Addons_NeoComplcache ()
+  let g:neocomplcache_enable_at_startup = 1
+endfunction
+wi
+" }}}
+" snipmate {{{
+"
+fun! Addons_snipmate ()
+  let g:snips_trigger_key = '<localleader><CR>' 
+endfunction
+
+" }}}
 "
 " }}}
 " My Addons {{{
@@ -59,12 +88,13 @@ let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
       \ 'Tabular': { 'categories': [ 'default' ] },
       \ 'ctrlp': { 'categories': [ 'default' ], 'config': function('Addons_ctrlp') },
-      \ 'snipmate': { 'categories': [ 'default' ] },
+      \ 'snipmate': { 'categories': [ 'default' ], 'config': function('Addons_snipmate') },
       \ 'snipmate-snippets': { 'categories': [ 'default' ] },
-      \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
-      \ 'twilight': { 'categories': [ 'default' ] },
+      \ 'minibufexplorer': { 'categories': [ 'default' ], 'config': function('Addons_minibufexplorer') },
+      \ 'neocomplcache': { 'categories': [ 'default' ], 'config': function('Addons_NeoComplcache') },
+      \ 'github:ervandew/supertab': { 'categories': [ 'default' ] }
   \ }
 
 
