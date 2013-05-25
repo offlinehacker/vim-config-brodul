@@ -429,6 +429,10 @@ vnoremap <Space> za
 " Double click to toggle folds
 :map <2-LeftMouse> za
 
+" Save and load folds
+au BufWinLeave * silent! mkview
+au BufWinEnter * silent! loadview
+
 " Make zz recursively open whatever top level fold we're in, no matter where the
 " cursor happens to be.
 nnoremap zz zCzO
