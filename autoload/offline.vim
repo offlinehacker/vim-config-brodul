@@ -706,5 +706,9 @@ endfunc
 " }}}
 " Console UI {{{
 " }}}
+" Usefull key bindings {{{
+" When pressing <leader>cd switch to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>
+" }}}
 
 endfun
