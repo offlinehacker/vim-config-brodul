@@ -209,6 +209,14 @@ au VimResized * exe "normal! \<c-w>="
 " set all window splits equal
 set equalalways
 
+" enable mouse
+set mouse=a
+set ttymouse=xterm2
+
+" Support for ctrl-c and alike
+source $VIMRUNTIME/mswin.vim
+behave xterm
+
 " }}}
 " Wildmenu completion {{{
 
@@ -417,6 +425,9 @@ set foldlevelstart=0
 " Space to toggle folds.
 nnoremap <Space> za
 vnoremap <Space> za
+
+" Double click to toggle folds
+:map <2-LeftMouse> za
 
 " Make zz recursively open whatever top level fold we're in, no matter where the
 " cursor happens to be.
