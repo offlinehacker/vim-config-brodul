@@ -94,7 +94,8 @@ let g:PIPA_ADDONS = {
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
       \ 'minibufexplorer': { 'categories': [ 'default' ], 'config': function('Addons_minibufexplorer') },
       \ 'neocomplcache': { 'categories': [ 'default' ], 'config': function('Addons_NeoComplcache') },
-      \ 'github:ervandew/supertab': { 'categories': [ 'default' ] }
+      \ 'github:ervandew/supertab': { 'categories': [ 'default' ] },
+      \ 'github:scrooloose/nerdtree': { 'categories': [ 'default' ] }
   \ }
 
 
