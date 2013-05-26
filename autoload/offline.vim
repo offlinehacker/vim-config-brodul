@@ -390,9 +390,9 @@ noremap j gj
 noremap k gk
 
 " Easy buffer navigation
-noremap <C-h>  <C-w>h
-noremap <C-j>  <C-w>j
-noremap <C-k>  <C-w>k
+noremap <C-j>  <C-w>h
+noremap <C-k>  <C-w>j
+noremap <C-i>  <C-w>k
 noremap <C-l>  <C-w>l
 noremap <leader>v <C-w>v
 
@@ -710,6 +710,13 @@ endfunc
 " Usefull key bindings {{{
 " When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>
+
+" Toggle NerdTree and Tagbar
+nmap <F7> :NERDTreeToggle<CR>
+nmap <F5> :TagbarToggle<CR>
+
+" Select all
+nmap <C-a> ggVG
 " }}}
 
 endfun
