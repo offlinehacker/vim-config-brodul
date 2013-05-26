@@ -65,13 +65,6 @@ fun! Addons_minibufexplorer ()
 endfunction
 
 " }}}
-" NeoComplcache {{{
-"
-fun! Addons_NeoComplcache ()
-  let g:neocomplcache_enable_at_startup = 1
-endfunction
-wi
-" }}}
 " snipmate {{{
 "
 fun! Addons_snipmate ()
@@ -79,10 +72,16 @@ fun! Addons_snipmate ()
 endfunction
 
 " }}}
+" YouCompleteMe {{{
+"
+fun! Addons_YouCompleteMe ()
+  let g:ycm_autoclose_preview_window_after_insertion = 1
+endfunction
+
+" }}}
 "
 " }}}
 " My Addons {{{
-
 
 let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
@@ -93,12 +92,9 @@ let g:PIPA_ADDONS = {
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
       \ 'minibufexplorer': { 'categories': [ 'default' ], 'config': function('Addons_minibufexplorer') },
-      \ 'neocomplcache': { 'categories': [ 'default' ], 'config': function('Addons_NeoComplcache') },
-      \ 'github:ervandew/supertab': { 'categories': [ 'default' ] },
+      \ 'YouCompleteMe': { 'categories': [ 'default' ], 'config': function('Addons_YouCompleteMe') },
       \ 'github:scrooloose/nerdtree': { 'categories': [ 'default' ] }
   \ }
-
-
 
 " TODO: {{{
 " cscope
