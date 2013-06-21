@@ -65,13 +65,6 @@ fun! Addons_minibufexplorer ()
 endfunction
 
 " }}}
-" snipmate {{{
-"
-fun! Addons_snipmate ()
-  let g:snips_trigger_key = '<localleader><CR>' 
-endfunction
-
-" }}}
 " YouCompleteMe {{{
 "
 fun! Addons_YouCompleteMe ()
@@ -86,9 +79,6 @@ endfunction
 let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
       \ 'Tabular': { 'categories': [ 'default' ] },
-      \ 'ctrlp': { 'categories': [ 'default' ], 'config': function('Addons_ctrlp') },
-      \ 'snipmate': { 'categories': [ 'default' ], 'config': function('Addons_snipmate') },
-      \ 'snipmate-snippets': { 'categories': [ 'default' ] },
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
       \ 'minibufexplorer': { 'categories': [ 'default' ], 'config': function('Addons_minibufexplorer') },
